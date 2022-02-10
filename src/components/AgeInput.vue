@@ -28,10 +28,10 @@ export default {
   },
   methods: {
     canTheyDrive() {
-      let age = this.age;
-      if (age >= 18) {
+      let inputAge = this.age;
+      if (inputAge >= 18) {
         this.result = "Can drive";
-      } else if (age < 18) {
+      } else if (inputAge < 18 && inputAge >= 0) {
         this.result = "Cannot drive";
       } else this.result = "Error";
     },
